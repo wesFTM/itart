@@ -9,7 +9,7 @@ export default function HomePage() {
       <Header />
 
       {/* Main content */}
-      <section className="flex-grow flex flex-col items-center justify-center px-6 md:px-20 lg:px-32">
+      <section className="animated-gradient flex-grow flex flex-col items-center justify-center px-6 md:px-20 lg:px-32">
         <div className="w-full h-[70vh] flex flex-col items-center justify-center text-center">
           <h1 className="text-4xl md:text-5xl font-medium">COMING SOON</h1>
           <p className="text-xm md:text-base font-light mt-2">

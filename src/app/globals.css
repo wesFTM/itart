@@ -29,3 +29,24 @@ body {
   color: var(--foreground);
   font-family: var(--font-poppins);
 }
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
+
+.animated-gradient {
+  background: radial-gradient(circle at center, #f9fafb, #e5e7eb, #d1d5db);
+  background-size: 200% 200%;
+  animation: gradientMove 20s ease-in-out infinite;
+}
+
+
