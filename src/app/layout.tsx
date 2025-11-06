@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Intimate Transgressions NYC",
+  title: "Intimate Transgressions Art",
   description: "Intimate Transgressions",
 };
 

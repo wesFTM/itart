@@ -1,6 +1,7 @@
 'use client';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -12,7 +13,7 @@ export default function HomePage() {
         <div className="w-full h-[70vh] flex flex-col items-center justify-center text-center">
           <h1 className="text-4xl md:text-5xl font-medium">COMING SOON</h1>
           <p className="text-xm md:text-base font-light mt-2">
-            For more information please call 917-418-4120
+            For more information please call <Link href="tel:9174184120" className="hover:underline">917-418-4120</Link> or email <Link href="mailto:info@intimatetransgressions.org" className="hover:underline">info@intimatetransgressions.org</Link>
           </p>
         </div>
       </section>

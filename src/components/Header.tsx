@@ -28,7 +28,7 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 text-black font-bold text-xs">
-          <Link href="tel:9174184120" className="hover:underline">CONTACT</Link>
+        <Link href="mailto:info@intimatetransgressions.org" className="hover:underline">CONTACT</Link>
         </nav>
 
         {/* Hamburger Icon */}
