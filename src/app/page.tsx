@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="w-full h-[70vh] flex flex-col items-center justify-center text-center">
           <h1 className="text-4xl md:text-5xl font-medium">COMING SOON</h1>
           <p className="text-xm md:text-base font-light mt-2">
-            For more information please call 123-456-7891
+            For more information please call 917-418-4120
           </p>
         </div>
       </section>

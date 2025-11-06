@@ -28,7 +28,7 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 text-black font-bold text-xs">
-          <Link href="tel:1234566789" className="hover:underline">CONTACT</Link>
+          <Link href="tel:9174184120" className="hover:underline">CONTACT</Link>
         </nav>
 
         {/* Hamburger Icon */}
@@ -47,7 +47,7 @@ export default function Header() {
           <button onClick={() => setMobileOpen(false)} className="absolute top-4 right-4 text-white" aria-label="Close menu">
             <X size={28} />
           </button>
-          <Link href="tel:1234566789" onClick={() => setMobileOpen(false)}>CONTACT</Link>
+          <Link href="tel:9174184120" onClick={() => setMobileOpen(false)}>CONTACT</Link>
 
         </div>
       )}
