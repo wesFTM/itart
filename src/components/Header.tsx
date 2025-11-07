@@ -11,12 +11,12 @@ export default function Header() {
 
   return (
     <>
-      <header className="absolute top-0 left-0 w-full z-30 py-5 px-6 lg:px-30 flex items-center justify-between bg-transparent backdrop-blur-sm">
+      <header className="absolute top-0 left-0 w-full z-30 py-5 px-6 lg:px-30 flex items-center justify-between bg-transparent text-white">
         {/* Left: Logo + Subtitle */}
         <div className="flex flex-col items-start space-y-1">
           <Link href="/">
             <Image
-              src="/itartLogo.svg"
+              src="/inartLogo_white.svg"
               alt="Intimate Trandgressions Logo"
               width={300}
               height={190}
@@ -27,14 +27,14 @@ export default function Header() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6 text-black font-bold text-xs">
+        <nav className="hidden md:flex items-center gap-6 text-white font-bold text-xs">
         <Link href="mailto:info@intimatetransgressions.org" className="hover:underline">CONTACT</Link>
         </nav>
 
         {/* Hamburger Icon */}
         <button
           onClick={() => setMobileOpen(true)}
-          className="md:hidden text-black"
+          className="md:hidden text-white"
           aria-label="Open menu"
         >
           <Menu size={28} />
@@ -47,7 +47,7 @@ export default function Header() {
           <button onClick={() => setMobileOpen(false)} className="absolute top-4 right-4 text-white" aria-label="Close menu">
             <X size={28} />
           </button>
-          <Link href="tel:9174184120" onClick={() => setMobileOpen(false)}>CONTACT</Link>
+          <Link href="mailto:info@intimatetransgressions.org" onClick={() => setMobileOpen(false)}>CONTACT</Link>
 
         </div>
       )}

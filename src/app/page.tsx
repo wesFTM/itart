@@ -2,20 +2,38 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Gallery from '@/components/Gallery';
+import { galleryImages } from "@/data/gallery";
 
 export default function HomePage() {
   return (
     <main className="flex flex-col min-h-screen bg-white text-black">
       <Header />
 
-      {/* Main content */}
-      <section className="animated-gradient flex-grow flex flex-col items-center justify-center px-6 md:px-20 lg:px-32">
-        <div className="w-full h-[70vh] flex flex-col items-center justify-center text-center">
-          <h1 className="text-4xl md:text-5xl font-medium">COMING SOON</h1>
-          <p className="text-xm md:text-base font-light mt-2">
-            For more information please call <Link href="tel:9174184120" className="hover:underline">917-418-4120</Link> or email <Link href="mailto:info@intimatetransgressions.org" className="hover:underline">info@intimatetransgressions.org</Link>
+         {/* 🔹 Feature background section */}
+         <section
+        className="relative h-[70vh] w-full flex items-center justify-center bg-center bg-cover"
+        style={{
+          backgroundImage:
+            "url('https://pub-18df4257283b453396bb6fab4370f7d1.r2.dev/eventimages/206ddd660ed2d83e46dcf56e94a32890.JPEG')",
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Content on top */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-3xl font-bold mb-2">COOMING SOON TO NYC</h1>
+          <p className="text-xs max-w-xl mx-auto">
+          For more information please call <Link href="tel:9174184120">917-418-4120</Link> or email <Link href="mailto:info@intimatetransgressions.org">info@intimatetransgressions.org</Link>
           </p>
         </div>
+      </section>
+       
+       {/* 🔹 Gallery section */}
+      <section className="container mx-auto py-12 px-6">
+        <h2 className="text-2xl font-bold mb-6 text-center">Shanghai 2025</h2>
+        <Gallery images={galleryImages} />
       </section>
 
       <Footer />
