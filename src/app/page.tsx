@@ -24,9 +24,9 @@ export default function HomePage() {
 
         {/* Content on top */}
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-3xl font-bold mb-2">COOMING SOON TO NYC</h1>
+          <h1 className="text-3xl font-bold mb-2">Live Now from Shangahi</h1>
           <p className="text-xs max-w-xl mx-auto">
-          For more information please call <Link href="tel:9174184120">917-418-4120</Link> or email <Link href="mailto:info@intimatetransgressions.org">info@intimatetransgressions.org</Link>
+          Coming soon to New York City. <br />For more information please call <Link href="tel:9174184120">917-418-4120</Link> or email <Link href="mailto:info@intimatetransgressions.org">info@intimatetransgressions.org</Link>
           </p>
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function HomePage() {
 
        {/* 🔹 Gallery section */}
       <section className="container mx-auto py-12 px-6">
-        <h2 className="text-2xl font-bold mb-6 text-center">Shanghai 2025</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Shanghai 2025 Highlights</h2>
         <Gallery images={galleryImages} />
       </section>
 

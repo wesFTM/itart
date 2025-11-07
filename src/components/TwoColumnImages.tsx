@@ -12,10 +12,10 @@ export default function TwoColumnImages({
   rightImage,
 }: TwoColumnImagesProps) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 bg-black">
+    <section className="grid grid-cols-1 md:grid-cols-2 bg-black gap-2 gap-[1px] items-center">
       {/* Left image */}
-      <div className="flex items-center justify-center w-full h-[400px] md:h-[600px] bg-black">
-        <div className="relative w-full h-full max-w-[90%] max-h-[90%]">
+      <div className="flex items-center justify-start w-full h-[400px] md:h-[600px] bg-black">
+        <div className="relative w-[90%] h-[90%]">
           <Image
             src={leftImage}
             alt="Left feature"
@@ -28,8 +28,8 @@ export default function TwoColumnImages({
       </div>
 
       {/* Right image */}
-      <div className="flex items-center justify-center w-full h-[400px] md:h-[600px] bg-black">
-        <div className="relative w-full h-full max-w-[90%] max-h-[90%]">
+      <div className="flex items-center justify-start w-full h-[400px] md:h-[600px] bg-black">
+        <div className="relative w-[90%] h-[90%]">
           <Image
             src={rightImage}
             alt="Right feature"

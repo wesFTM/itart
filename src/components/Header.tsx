@@ -28,7 +28,11 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 text-white font-bold text-xs">
-        <Link href="mailto:info@intimatetransgressions.org" className="hover:underline">CONTACT</Link>
+          <Link href="#" className="hover:underline">ABOUT</Link>
+          <Link href="#" className="hover:underline">EVENTS</Link>
+          <Link href="mailto:info@intimatetransgressions.org" className="hover:underline">CONTACT</Link>
+          <Link href="#" className="hover:underline">DONATE</Link>
+          <Link href="#" onClick={() => setMobileOpen(false)}>SHOP</Link>
         </nav>
 
         {/* Hamburger Icon */}
@@ -47,7 +51,11 @@ export default function Header() {
           <button onClick={() => setMobileOpen(false)} className="absolute top-4 right-4 text-white" aria-label="Close menu">
             <X size={28} />
           </button>
+           <Link href="#" onClick={() => setMobileOpen(false)}>ABOUT</Link>
+           <Link href="#" onClick={() => setMobileOpen(false)}>EVENTS</Link>
           <Link href="mailto:info@intimatetransgressions.org" onClick={() => setMobileOpen(false)}>CONTACT</Link>
+           <Link href="#" onClick={() => setMobileOpen(false)}>DONATE</Link>
+           <Link href="#" onClick={() => setMobileOpen(false)}>SHOP</Link>
 
         </div>
       )}
