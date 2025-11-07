@@ -30,7 +30,6 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-       
         {/* 🔹 Two-column image section */}
       <TwoColumnImages
         leftImage="https://pub-18df4257283b453396bb6fab4370f7d1.r2.dev/eventimages/4b101b7d2f980dfd8c636c563e3a167e.JPG"
