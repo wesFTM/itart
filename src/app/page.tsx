@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 import Gallery from '@/components/Gallery';
 import { galleryImages } from "@/data/gallery";
+import TwoColumnImages from '@/components/TwoColumnImages';
 
 export default function HomePage() {
   return (
@@ -30,6 +31,12 @@ export default function HomePage() {
         </div>
       </section>
        
+        {/* 🔹 Two-column image section */}
+      <TwoColumnImages
+        leftImage="https://pub-18df4257283b453396bb6fab4370f7d1.r2.dev/eventimages/4b101b7d2f980dfd8c636c563e3a167e.JPG"
+        rightImage="https://pub-18df4257283b453396bb6fab4370f7d1.r2.dev/eventimages/57c1296ab23138cf2c4b6509b94326eb.JPG"
+      />
+
        {/* 🔹 Gallery section */}
       <section className="container mx-auto py-12 px-6">
         <h2 className="text-2xl font-bold mb-6 text-center">Shanghai 2025</h2>

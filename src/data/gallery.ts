@@ -3,7 +3,6 @@ export interface GalleryImage {
     alt: string;
   }
 
-
   export const galleryImages: GalleryImage[] = [
     {
       src: "https://pub-18df4257283b453396bb6fab4370f7d1.r2.dev/eventimages/e85e62785e69eac1ed7d2fb2f87d3ecf.JPG",
